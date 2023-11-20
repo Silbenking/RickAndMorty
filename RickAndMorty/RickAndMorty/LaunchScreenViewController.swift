@@ -47,8 +47,8 @@ class LaunchScreenViewController: UIViewController {
             })
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now()+3, execute: {
-            let vc = ViewController()
+        DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
+            let vc = TabBarController()
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
